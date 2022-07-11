@@ -18,3 +18,6 @@ class Unit(models.Model):
     )
     location = models.CharField(max_length=20)
     shelf = models.IntegerField()
+
+    def __str__(self):
+      return self.name
