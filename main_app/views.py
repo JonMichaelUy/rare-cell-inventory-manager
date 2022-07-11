@@ -26,3 +26,7 @@ def home(request):
 def units_index(request):
   units = Unit.objects.all()
   return render(request, 'units/index.html', {'units' : units})
+
+def units_detail(request, unit_id):
+  unit = Unit.objects.get(id=unit_id)
+  return render(request, 'units/detail.html', { 'unit': unit})
