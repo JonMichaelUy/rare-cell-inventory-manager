@@ -5,4 +5,5 @@ urlpatterns = [
   path('', views.home, name='home'),
   path('units/', views.units_index, name='index'),
   path('units/<int:unit_id>/', views.units_detail, name='detail'),
+  path('units/add/', views.AddUnit.as_view(), name='add_unit'),
 ]

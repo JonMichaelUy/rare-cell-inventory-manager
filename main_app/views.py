@@ -1,5 +1,6 @@
 
 from django.shortcuts import render
+from django.views.generic.edit import CreateView
 from .models import Unit
 
 
@@ -30,3 +31,9 @@ def units_index(request):
 def units_detail(request, unit_id):
   unit = Unit.objects.get(id=unit_id)
   return render(request, 'units/detail.html', { 'unit': unit})
+
+
+class AddUnit(CreateView):
+  model = Unit
+  fields = '__all__'
+  success_url = '/units/'

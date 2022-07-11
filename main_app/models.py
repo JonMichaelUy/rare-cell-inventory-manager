@@ -21,3 +21,6 @@ class Unit(models.Model):
 
     def __str__(self):
       return self.name
+
+    def get_absolute_url(self):
+      return reverse('detail', kwargs={'unit_id': self.id})
