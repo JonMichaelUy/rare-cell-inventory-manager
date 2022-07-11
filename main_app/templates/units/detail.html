@@ -17,6 +17,7 @@
       <p>Shelf: {{unit.shelf}}</p>
     </a>
   </div>
- 
+  <a href="{% url 'edit_unit' unit.id %}">Edit Details</a>
+  <a href="{% url 'delete_unit' unit.id %}">Remove from Inventory</a>
 </body>
 </html>

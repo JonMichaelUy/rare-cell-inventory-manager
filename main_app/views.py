@@ -1,7 +1,8 @@
 
-from django.shortcuts import render
-from django.views.generic.edit import CreateView
+from django.shortcuts import render, redirect
 from .models import Unit
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
+
 
 
 
@@ -36,4 +37,12 @@ def units_detail(request, unit_id):
 class AddUnit(CreateView):
   model = Unit
   fields = '__all__'
+  success_url = '/units/'
+
+class  EditUnit(UpdateView):
+  model = Unit
+  fields = '__all__'
+
+class DeleteUnit(DeleteView):
+  model = Unit
   success_url = '/units/'

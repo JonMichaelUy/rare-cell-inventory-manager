@@ -1,9 +1,10 @@
 from django.db import models
+from django.urls import reverse
 
 TESTED = (
-    ('P', 'Pos'),
-    ('N', 'Neg'),
-    ('?', 'NT'),
+  ('?', 'NT'),
+  ('P', 'Pos'),
+  ('N', 'Neg')
 )
 # Create your models here.
 
@@ -14,7 +15,7 @@ class Unit(models.Model):
     D = models.CharField(
         max_length=1,
         choices=TESTED,
-        default=TESTED[1][1]
+        default=TESTED[0][0]
     )
     location = models.CharField(max_length=20)
     shelf = models.IntegerField()
