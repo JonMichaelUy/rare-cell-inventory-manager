@@ -1,5 +1,6 @@
 from django.db import models
 from django.urls import reverse
+from datetime import date
 from django.contrib.auth.models import User
 
 TESTED = (
@@ -12,6 +13,7 @@ TESTED = (
 
 class Unit(models.Model):
     unit_id = models.CharField(max_length=20)
+    date = models.DateField('Expires',blank=True,null=True)
     ABO = models.CharField(max_length=2)
     D = models.CharField(
         max_length=5,
@@ -160,7 +162,9 @@ class Unit(models.Model):
     )
     location = models.CharField(max_length=20)
     shelf = models.IntegerField()
+    notes = models.CharField(max_length=500)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
+
 
     def __str__(self):
       return self.name

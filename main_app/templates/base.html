@@ -7,13 +7,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rare Cell Iventory Manager</title>
   <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/skeleton.css' %}"  type="text/css"> 
+  <link rel="stylesheet" href="{% static 'css/normalize.css' %}"  type="text/css"> 
 </head>
 <body>
 
   <header>
     <nav>
-      <h1>Rare Cell Inventory Manager</h1>
-      <h3>SEI Transfusion Labs</h3>
+      <div class="headertext">
+      <h1 class="headerheader" > Rare Cell Inventory Manager</h1>
+      <h3> SEI Labs</h3>
+    </div>
       <ul class="navbar">
         <li class="navitem"><a href="/">Home</a></li>
         {% if user.is_authenticated %}

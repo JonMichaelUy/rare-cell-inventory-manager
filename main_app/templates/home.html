@@ -6,7 +6,45 @@
   
   <h3>Antigen Search</h3>
   <form action="{% url 'search_results' %}" method='get'>
-    <input name="q" type="text" placeholder="Search..."/>
+    <ul style="list-style: none" class="antigenul">
+      <div class="antigendiv">
+        <li>ABO <input name="ABO" type="text" placeholder="Search..."/></li>
+        <li>D   <input name="D" type="text" placeholder="Search..."/></li>
+        <li>C   <input name="C" type="text" placeholder="Search..."/></li>
+        <li>Cw  <input name="Cw" type="text" placeholder="Search..."/></li>
+        <li>E  <input name="E" type="text" placeholder="Search..."/></li>
+        <li>c  <input name="c" type="text" placeholder="Search..."/></li>
+        <li>e  <input name="e" type="text" placeholder="Search..."/></li>
+        <li>K  <input name="K" type="text" placeholder="Search..."/></li>
+        <li>k  <input name="k" type="text" placeholder="Search..."/></li>
+        <li>Kpa  <input name="Kpa" type="text" placeholder="Search..."/></li>
+        <li>Kpb  <input name="Kpb" type="text" placeholder="Search..."/></li>
+    </div>
+    <div class="antigendiv">
+      <li>Jsa  <input name="Jsa" type="text" placeholder="Search..."/></li>
+      <li>Jsb  <input name="Jsb" type="text" placeholder="Search..."/></li>
+      <li>Fya  <input name="Fya" type="text" placeholder="Search..."/></li>
+      <li>Fyb  <input name="Fyb" type="text" placeholder="Search..."/></li>
+      <li>Fy3  <input name="Fy3" type="text" placeholder="Search..."/></li>
+      <li>Jka  <input name="Jka" type="text" placeholder="Search..."/></li>
+      <li>Jkb  <input name="Jkb" type="text" placeholder="Search..."/></li>
+      <li>Jk3  <input name="Jk3" type="text" placeholder="Search..."/></li>
+      <li>Dia  <input name="Dia" type="text" placeholder="Search..."/></li>
+      <li>Dib  <input name="Dib" type="text" placeholder="Search..."/></li>
+      <li>Wra  <input name="Wra" type="text" placeholder="Search..."/></li>
+      <li>Wrb  <input name="Wrb" type="text" placeholder="Search..."/></li>
+    </div>
+    <div class="antigendiv"> 
+      <li>Lea  <input name="Lea" type="text" placeholder="Search..."/></li>
+      <li>Leb  <input name="Leb" type="text" placeholder="Search..."/></li>
+      <li>M  <input name="M" type="text" placeholder="Search..."/></li>
+      <li>N  <input name="N" type="text" placeholder="Search..."/></li>
+      <li>S  <input name="S" type="text" placeholder="Search..."/></li>
+      <li>s  <input name="s" type="text" placeholder="Search..."/></li>
+      <li>U  <input name="U" type="text" placeholder="Search..."/></li>
+      <li><input type="submit" value="submit"></li>
+    </div>  
+    </ul>
   </form>
 
   <footer></footer>

@@ -1,31 +1,65 @@
-body {
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(47, 176, 209, 0.893);
-  
-  align-items: center;
-}
-nav {
-  display: flex;
-  border: 1px solid black;
-  display: flex;
-  flex-direction: column;
-  width: 110vh;
 
+header{
+  margin-top: 0;
+  padding-top: 0;
+}
+
+nav {
+display: flex;
+flex-wrap: wrap;
+margin-top: 0;
+padding-top: 0;
+background-image: url("redcells.png");
+background-size: contain;
+height: 50%;
+justify-items: center;
 }
 
 .navbar {
   display: flex;
+  min-height: 25px;
+border-bottom: 2px solid rgb(159, 19, 19);
   flex-direction: row;
-  border: 1px solid black;
+ 
  justify-content: space-around;
+ padding-top: 20px;
+ align-self: center;
+ font-size: large;
+ color:red
+}
 
+.headertext {
+  display:flex;
+  
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.headerheader {
+  display:flex;
+  justify-content: center;
+  width: 100vw;
 
 }
 
-.navitem {
-  padding: 30px;
-  margin: 3px;
+td {
+  padding-left: 50px;
 }
 
-table,th,td {border: 1px solid white}
+.unitlist {
+  align-self: center;
+  padding-left: 0;
+}
+
+.antigenul {
+  display: flex;
+  flex-direction: row;
+}
+
+.antigendiv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-left: 30px;
+  padding-right: 30px;
+  
+}
