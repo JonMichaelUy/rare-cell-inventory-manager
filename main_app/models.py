@@ -157,7 +157,6 @@ class Unit(models.Model):
         choices=TESTED,
         default=TESTED[0][0]
     )
-    notes = models.CharField(max_length=200)
     location = models.CharField(max_length=20)
     shelf = models.IntegerField()
 
