@@ -46,7 +46,7 @@ def signup(request):
 
 class AddUnit(LoginRequiredMixin, CreateView):
   model = Unit
-  fields = '__all__'
+  fields = ['unit_id', 'ABO', 'D', 'C', 'Cw', 'E', 'c', 'e', 'K', 'k', 'Kpa', 'Kpb', 'Jsa', 'Jsb', 'Fya', 'Fyb', 'Fy3', 'Jka', 'Jkb', 'Jk3', 'Dia', 'Dib', 'Wra', 'Wrb', 'Lea', 'Leb', 'M', 'N', 'S', 's', 'U']
   success_url = '/units/'
 
 class  EditUnit(LoginRequiredMixin, UpdateView):
