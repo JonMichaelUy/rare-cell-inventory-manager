@@ -1,23 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
+{% extends 'base.html' %} {% block content%}
+
+
   <h1>Unit View</h1>
 
   <div class="card">
-      <p>Unit ID: {{unit.unit_id}}</p>
-      <p>ABO: {{unit.ABO}}</p>
-      <p>D: {{unit.D}}</p>
+    <table>
+      <tr>
+        <th>Unit ID</th>
+      </br>
+        <th>ABO/D</th>
+        <th>Location</th>
+        <th>Shelf</th>
+      </tr>
+      <tr>
+        <td>{{ unit.unit_id }}</td>
+      </br>
+        <td>{{ unit.ABO }} {{ unit.D }}</td>
+        <td>{{ unit.location}}</td>
+        <td>{{ unit.shelf}}</td>
+      </tr>
+    </table>
+    
+     
       <p>Location: {{unit.location}}</p>
       <p>Shelf: {{unit.shelf}}</p>
     </a>
   </div>
   <a href="{% url 'edit_unit' unit.id %}">Edit Details</a>
   <a href="{% url 'delete_unit' unit.id %}">Remove from Inventory</a>
-</body>
-</html>
+
+{% endblock %}  

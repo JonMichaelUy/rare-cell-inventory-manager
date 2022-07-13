@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rare Cell Iventory Manager</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+</head>
+<body>
+
+  <header>
+    <nav>
+      <h1>Rare Cell Inventory Manager</h1>
+      <h3>SEI Transfusion Labs</h3>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/units">View Inventory</a></li>
+        <li><a href="{% url 'add_unit' %}">Add a Unit</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">{% block content %} {% endblock %}</main>  
+</body>
+</html>

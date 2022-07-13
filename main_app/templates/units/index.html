@@ -1,23 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <h1>List of Units</h1>
+{% extends 'base.html' %} {% block content%}
+
+
+  <h1>List of Units</h1> {{ form }}
   {% for unit in units %}
-  <div class="card">
-    <a href="/units/{{unit.id}}">
+  
+  <table>
+    
+      <tr>
+        <th>Unit ID</th>
+      </br>
+        <th>ABO/D</th>
+        <th>Location</th>
+        <th>Shelf</th>
+      </tr>
+      <tr>
+        <td><a href="/units/{{unit.id}}">{{ unit.unit_id }}</a></td>
+      </br>
+        <td>{{ unit.ABO }} {{ unit.D }}</td>
+        <td>{{ unit.location}}</td>
+        <td>{{ unit.shelf}}</td>
+      </tr>
+    
+  </table>
+  </a>
+  <!-- <div class="card">
+    
       <p>Unit ID: {{unit.unit_id}}</p>
       <p>ABO: {{unit.ABO}}</p>
       <p>D: {{unit.D}}</p>
       <p>Location: {{unit.location}}</p>
       <p>Shelf: {{unit.shelf}}</p>
     </a>
-  </div>
+  </div> -->
   {% endfor %}
-</body>
-</html>
+
+
+{% endblock %} 

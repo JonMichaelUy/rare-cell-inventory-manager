@@ -1,0 +1,41 @@
+{% extends 'base.html' %} {% block content%}
+
+
+  
+  <h1>SEARCH RESULTS</h1>
+
+  
+    {% for unit in object_list %}
+      <table>
+        <tr>
+          <th>Unit ID</th>
+        </br>
+          <th>ABO/D</th>
+        </tr>
+        <tr>
+          <td>{{ unit.unit_id }}</td>
+        </br>
+          <td>{{ unit.ABO }} {{ unit.D }}</td>
+        </tr>
+      </table>
+    {% endfor %}
+  
+
+  <!-- <ul>
+    {% for unit in object_list %}
+      <li>
+        {{ unit.unit_id }}, ABO/D:{{ unit.ABO }} {{ unit.D }}
+      </li>
+    {% endfor %}
+  </ul> -->
+
+  <!-- <form method='POST' action=''>
+    {%csrf_token%}
+    {{form}}
+      <input type="submit" value="Search" />
+  </form> -->
+  
+
+
+
+{% endblock %}  
