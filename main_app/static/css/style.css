@@ -1,5 +1,31 @@
 body {
-  background-color: plum;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(47, 176, 209, 0.893);
+  
+  align-items: center;
+}
+nav {
+  display: flex;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  width: 110vh;
+
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+ justify-content: space-around;
+
+
+}
+
+.navitem {
+  padding: 30px;
+  margin: 3px;
 }
 
 table,th,td {border: 1px solid white}

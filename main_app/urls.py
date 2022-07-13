@@ -11,6 +11,5 @@ urlpatterns = [
   path('units/<int:pk>/edit/', views.EditUnit.as_view(), name='edit_unit'),
   path('units/<int:pk>/delete/', views.DeleteUnit.as_view(), name='delete_unit'),
   path("search/", SearchResultsView.as_view(), name="search_results"),
-  # path('search_units', views.search_units, name='search_units'),
-
+  path('accounts/signup/', views.signup, name='signup'),
 ]

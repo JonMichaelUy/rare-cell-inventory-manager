@@ -14,10 +14,16 @@
     <nav>
       <h1>Rare Cell Inventory Manager</h1>
       <h3>SEI Transfusion Labs</h3>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/units">View Inventory</a></li>
-        <li><a href="{% url 'add_unit' %}">Add a Unit</a></li>
+      <ul class="navbar">
+        <li class="navitem"><a href="/">Home</a></li>
+        {% if user.is_authenticated %}
+        <li class="navitem"><a href="/units">View Inventory</a></li>
+        <li class="navitem"><a href="{% url 'add_unit' %}">Add a Unit</a></li>
+        <li class="navitem"><a href="{% url 'logout' %}">Log Out</a></li>
+        {% else %}
+        <li class="navitem"><a href="{% url 'signup' %}">Sign Up</a></li>
+        <li class="navitem"><a href="{% url 'login' %}">Log In</a></li>
+        {% endif %}
       </ul>
     </nav>
   </header>
