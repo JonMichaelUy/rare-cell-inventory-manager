@@ -15,7 +15,11 @@ Wireframe:
 
 
 ERD:
-<img width="633" alt="Screen Shot 2022-07-14 at 8 29 59 AM" src="https://user-images.githubusercontent.com/103963101/178983540-295538a9-0a7a-442c-a259-6145c36d15e7.png">
+
+<img width="633" alt="Screen Shot 2022-07-14 at 8 29 59 AM" src="https://user-images.githubusercontent.com/103963101/178983714-aaa6f6d8-a33e-4c93-ba33-714d37c71b84.png">
+
+
+
 
 
 Trello link:
