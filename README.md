@@ -12,8 +12,10 @@ https://trello.com/b/6oEIC7JX/rare-blood-inventory-manager
 
 Screenshots:
 
-![Screen Shot 2022-07-13 at 11 04 55 PM](https://user-images.githubusercontent.com/103963101/178893315-4001c4e1-9288-4349-90b4-ddbc1cd344d6.png)
+
 ![Screen Shot 2022-07-13 at 11 01 41 PM](https://user-images.githubusercontent.com/103963101/178893347-a6105054-c0c2-4dc9-a82b-e40f2b4bc350.png)
+![Screen Shot 2022-07-13 at 11 43 58 PM](https://user-images.githubusercontent.com/103963101/178893642-197d4b1f-e205-414e-9842-183b79d6352d.png)
+![Screen Shot 2022-07-13 at 11 44 22 PM](https://user-images.githubusercontent.com/103963101/178893651-c8730ff8-d324-46de-a4d8-aad5aafbfff1.png)
 
 
 See my deployed app on Heroku:
