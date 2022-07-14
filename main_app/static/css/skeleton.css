@@ -158,7 +158,7 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #341edb; }
+  color: #ec1010; }
 a:hover {
   color: #fc6d06; }
 
@@ -324,7 +324,7 @@ pre > code {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 th,
 td {
-  padding: 10px 10px 100px 0;
+  padding: 10px 10px 20px 0;
   text-align: center;
   text-indent: 3px;
 
@@ -335,7 +335,7 @@ td:first-child {
   padding-left: 0; }
 th:last-child,
 td:last-child {
-  padding-right: 0; }
+  padding-right: 2px; }
 
 
 /* Spacing

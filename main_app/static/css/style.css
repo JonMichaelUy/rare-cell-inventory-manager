@@ -9,8 +9,9 @@ display: flex;
 flex-wrap: wrap;
 margin-top: 0;
 padding-top: 0;
-background-image: url("redcells.png");
-background-size: contain;
+background-image: url("bloodbags2.jpg");
+background-repeat: repeat;
+background-color: rgb(220, 228, 228);
 height: 50%;
 justify-items: center;
 }
@@ -20,17 +21,19 @@ justify-items: center;
   min-height: 25px;
 border-bottom: 2px solid rgb(159, 19, 19);
   flex-direction: row;
- 
+ font-weight: bolder;
  justify-content: space-around;
- padding-top: 20px;
+ padding-top: 0px;
  align-self: center;
- font-size: large;
- color:red
+
+ color:red;
+ text-shadow: 1px 1px yellow
 }
 
 .headertext {
   display:flex;
-  
+  color: crimson;
+  text-shadow: ;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -63,3 +66,4 @@ td {
   padding-right: 30px;
   
 }
+

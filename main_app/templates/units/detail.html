@@ -83,7 +83,12 @@
       <p>Entered by: {{unit.user}}</p>
     </a>
   </div>
-  <a href="{% url 'edit_unit' unit.id %}">Edit Details</a>
-  <a href="{% url 'delete_unit' unit.id %}">Remove from Inventory</a>
+  <form action="{% url 'edit_unit' unit.id %}">
+    <input type="submit" value="Edit Details">
+  </form>
+  <form action="{% url 'delete_unit' unit.id %}">
+    <input type="submit" value="Remove from Inventory">
+  </form>
+  
 
 {% endblock %}  
