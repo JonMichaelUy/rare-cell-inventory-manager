@@ -14,6 +14,10 @@ Wireframe:
 ![Screen Shot 2022-07-14 at 8 09 19 AM](https://user-images.githubusercontent.com/103963101/178979393-a730396f-ed02-499f-b4c7-49e8c51c683a.png)
 
 
+ERD:
+<img width="633" alt="Screen Shot 2022-07-14 at 8 29 59 AM" src="https://user-images.githubusercontent.com/103963101/178983540-295538a9-0a7a-442c-a259-6145c36d15e7.png">
+
+
 Trello link:
 https://trello.com/b/6oEIC7JX/rare-blood-inventory-manager
 
