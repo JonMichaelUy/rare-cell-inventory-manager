@@ -7,6 +7,13 @@ A user can do the following:
 4. retrieve a list of units
 5. perform a search using multiple antigen parameters to find suitable blood units.
 
+Wireframe:
+
+![Screen Shot 2022-07-14 at 8 08 28 AM](https://user-images.githubusercontent.com/103963101/178979356-1b5f446c-349e-44a2-a802-df2eb98864b6.png)
+![Screen Shot 2022-07-14 at 8 08 59 AM](https://user-images.githubusercontent.com/103963101/178979380-7474b6b1-6a79-4f04-8695-6dc212133184.png)
+![Screen Shot 2022-07-14 at 8 09 19 AM](https://user-images.githubusercontent.com/103963101/178979393-a730396f-ed02-499f-b4c7-49e8c51c683a.png)
+
+
 Trello link:
 https://trello.com/b/6oEIC7JX/rare-blood-inventory-manager
 
